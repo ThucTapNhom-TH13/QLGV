@@ -146,6 +146,9 @@ namespace QLGV_nhom9
             this.ShowChild(this, new FormLyLichGiaoVien());
         }
 
-
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://plus.google.com/u/0/101081654093017271632/posts/6X5EQk7FTBX");
+        }
     }
 }
