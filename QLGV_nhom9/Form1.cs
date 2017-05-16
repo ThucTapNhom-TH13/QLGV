@@ -56,16 +56,19 @@ namespace QLGV_nhom9
 
         private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Visible = false;
+            webBrowser1.Visible = false;
         }
 
         private void họcHàmToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new DanhSachHocHam());
         }
 
         private void họcVịToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new DanhSachHocVi());
         }
 
@@ -77,77 +80,95 @@ namespace QLGV_nhom9
 
         private void mônHọcToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new DanhSachMonHoc());
         }
 
         private void toolGiaoVien_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new DanhSach());
         }
 
         private void toolInKhoa_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new DanhSachKhoa());
         }
 
         private void toolBoMon_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new DanhSachBoMon());
         }
 
         private void toolDanhMuc_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Visible = false;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            webBrowser1.Visible = false;
         }
 
         private void theoBộMônToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new thongketheobomon());
         }
 
         private void toolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
+            webBrowser1.Visible = false;
         }
 
         private void theoChứcVụToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new thongketheochucvu());
         }
 
         private void theoKhoaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new thongketheokhoa());
         }
 
         private void theoHọcHàmToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new thongketheohocham());
         }
 
         private void theoHọcVịToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new thongketheohocvi());
         }
 
         private void toolTimKiem_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             this.ShowChild(this, new TimKiem());
         }
 
         private void inẪnToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = false;
             //this.ShowChild(this, new InAn());
             this.ShowChild(this, new FormLyLichGiaoVien());
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            webBrowser1.Visible = true;
+            webBrowser1.Navigate("https://plus.google.com/u/0/101081654093017271632/posts/6X5EQk7FTBX");
+        }
+
+        private void toolThongKe_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
             webBrowser1.Navigate("https://plus.google.com/u/0/101081654093017271632/posts/6X5EQk7FTBX");
         }
     }

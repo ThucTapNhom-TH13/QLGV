@@ -283,3 +283,44 @@ F:\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThongTinMonHoc.resources
 F:\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThôngTinKhoa.resources
 F:\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.TimKiem.resources
 F:\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.csproj.GenerateResource.Cache
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Lý Lịch\LyLichGiaoVien.rdlc
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\QLGV_nhom9.exe
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\QLGV_nhom9.pdb
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.SqlServer.Rmo.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.SqlServer.Dmf.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.ReportViewer.WebForms.xml
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.DanhSach.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.DanhSachBoMon.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.DanhSachChucVu.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.DanhSachHocHam.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.DanhSachHocVi.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.DanhSachKhoa.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.DanhSachMonHoc.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.frmMain.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.InAn.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.Lý_Lịch.FormLyLichGiaoVien.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.Properties.Resources.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.thongketheobomon.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.thongketheochucvu.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.thongketheohocham.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.thongketheohocvi.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.thongketheokhoa.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThongTinBoMon.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThongTinChucVu.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThongTinGiaoVien.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThongTinHocHam.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThongTinHocVi.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThongTinMonHoc.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThôngTinKhoa.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.TimKiem.resources
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.csproj.GenerateResource.Cache

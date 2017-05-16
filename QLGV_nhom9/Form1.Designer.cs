@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.mnuQLGV = new System.Windows.Forms.MenuStrip();
             this.danhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.họcHàmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,8 +54,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolThongKe = new System.Windows.Forms.ToolStripButton();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.mnuQLGV.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -187,9 +184,7 @@
             this.toolStripSeparator4,
             this.toolTimKiem,
             this.toolStripSeparator1,
-            this.toolThongKe,
-            this.toolStripButton1,
-            this.toolStripButton2});
+            this.toolThongKe});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(684, 58);
@@ -281,13 +276,14 @@
             // toolThongKe
             // 
             this.toolThongKe.AutoSize = false;
-            this.toolThongKe.Image = global::QLGV_nhom9.Properties.Resources.chart32;
+            this.toolThongKe.Image = global::QLGV_nhom9.Properties.Resources.library132;
             this.toolThongKe.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolThongKe.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolThongKe.Name = "toolThongKe";
             this.toolThongKe.Size = new System.Drawing.Size(78, 55);
-            this.toolThongKe.Text = "Thống kê";
+            this.toolThongKe.Text = "Hướng dẫn";
             this.toolThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolThongKe.Click += new System.EventHandler(this.toolThongKe_Click);
             // 
             // webBrowser1
             // 
@@ -297,25 +293,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(684, 480);
             this.webBrowser1.TabIndex = 5;
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 55);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 55);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.webBrowser1.Visible = false;
             // 
             // frmMain
             // 
@@ -367,8 +345,6 @@
         private System.Windows.Forms.ToolStripButton toolTimKiem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolThongKe;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
