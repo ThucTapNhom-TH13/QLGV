@@ -169,7 +169,7 @@ namespace QLGV_nhom9
         private void toolThongKe_Click(object sender, EventArgs e)
         {
             webBrowser1.Visible = true;
-            webBrowser1.Navigate("https://plus.google.com/u/0/101081654093017271632/posts/6X5EQk7FTBX");
+            webBrowser1.Navigate("https://plus.google.com/u/0/101081654093017271632/posts/32L9yUJAUTm");
         }
     }
 }
