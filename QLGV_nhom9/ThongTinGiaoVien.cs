@@ -19,7 +19,23 @@ namespace QLGV_nhom9
         }
         public ThongTinGiaoVien(string magv, string tengv, DateTime ngaysinh, string gioitinh, string dantoc, string email, string quequan, string bomon, string khoa, string chucvu, string sdt, string scmt, double hesoluong,double luongcoban)
         {
-          
+            InitializeComponent();
+            //Hiển thị trên giao diện
+            txtMaGV.Text = magv;
+            txtTenGV.Text = tengv;
+            txtQueQuan.Text = quequan;
+            txtEmail.Text = email;
+            txtDanToc.Text = dantoc;
+            cmbKhoa.Text = khoa;
+            cmbGioiTinh.Text = gioitinh;
+            cmbChucVu.Text = chucvu;
+            txtHeSoLuong.Text = hesoluong.ToString();
+            txtLuongCoBan.Text = luongcoban.ToString();
+            txtCMT.Text = scmt;
+            txtSDT.Text = sdt;
+            dtpNgaySinh.Text = ngaysinh.ToString();
+            cmbBoMon.Text = bomon;
+            txtMaGV.Enabled = false;//ko cho phep sua
         }
 
 
@@ -124,13 +140,42 @@ namespace QLGV_nhom9
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-           
+            if (!KiemTra()) return;
+
+            List<SqlParameter> listParams = new List<SqlParameter>();
+            listParams.Add(new SqlParameter("magv", txtMaGV.Text.Trim()));
+            listParams.Add(new SqlParameter("tengiaovien", txtTenGV.Text.Trim()));
+            listParams.Add(new SqlParameter("makhoa", cmbKhoa.SelectedValue.ToString().Trim()));
+            listParams.Add(new SqlParameter("gioitinh", cmbGioiTinh.Text.Trim()));
+            listParams.Add(new SqlParameter("machucvu", cmbChucVu.SelectedValue.ToString().Trim()));
+            listParams.Add(new SqlParameter("email", txtEmail.Text.Trim()));
+            listParams.Add(new SqlParameter("quequan", txtQueQuan.Text.Trim()));
+            listParams.Add(new SqlParameter("dantoc", txtDanToc.Text.Trim()));
+            listParams.Add(new SqlParameter("hesoluong", double.Parse(txtHeSoLuong.Text.Trim())));
+            listParams.Add(new SqlParameter("sdt", txtSDT.Text.Trim()));
+            listParams.Add(new SqlParameter("cmt", txtCMT.Text.Trim()));
+            listParams.Add(new SqlParameter("ngaysinh", dtpNgaySinh.Value));
+            listParams.Add(new SqlParameter("mabomon", cmbBoMon.SelectedValue.ToString().Trim()));
+
+            listParams.Add(new SqlParameter("luongcoban", int.Parse(txtLuongCoBan.Text.Trim())));
+            if (txtMaGV.Enabled)//Thêm mới
+            {
+                a.ExcecuteProcedure
+                    ("themgiaovien", listParams);
+            }
+            else //Sửa
+            {
+                a.ExcecuteProcedure
+                    ("suagiaovien", listParams);
+            }
+            this.Close();
         }
 
         private void ThongTinGiaoVien_Load(object sender, EventArgs e)
         {
+            LoadDSKhoa();
+            LoadDSChucVu();
 
-            
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
