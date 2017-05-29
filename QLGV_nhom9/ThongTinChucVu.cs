@@ -19,7 +19,12 @@ namespace QLGV_nhom9
         }
         public ThongTinChucVu(string machucvu, string tenchucvu, int stt)
         {
-          
+
+            InitializeComponent();
+            txtMaChucVu.Text = machucvu;
+            txtTenChucVu.Text = tenchucvu;
+            txtSTT.Text = stt.ToString();
+            txtMaChucVu.Enabled = false;
 
         }
         //kiem tra thong tin khi nhap
@@ -60,7 +65,24 @@ namespace QLGV_nhom9
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-           
+            if (!kiem_tra()) return;
+            // khoi tao danh sach parameter
+            List<SqlParameter> listParams = new List<SqlParameter>();
+            listParams.Add(new SqlParameter("machucvu", txtMaChucVu.Text.Trim()));
+            listParams.Add(new SqlParameter("tenchucvu", txtTenChucVu.Text.Trim()));
+
+            if (txtMaChucVu.Enabled)//Thêm mới
+            {
+                a.GetDatastoreprocude
+                    ("themchucvu", listParams);
+            }
+            else //Sửa
+            {
+
+                a.GetDatastoreprocude
+                    ("suachucvu", listParams);
+            }
+            this.Close();
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
