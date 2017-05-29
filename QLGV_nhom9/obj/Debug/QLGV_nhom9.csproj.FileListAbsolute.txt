@@ -239,3 +239,6 @@ C:\Users\Nguyen Linh\Downloads\QLGV_nhom9\QLGV_nhom9\QLGV_nhom9\bin\Debug\Micros
 C:\Users\Nguyen Linh\Desktop\QLGV_nhom9\QLGV_nhom9\QLGV_nhom9\bin\Debug\QLGV_nhom9.exe.config
 C:\Users\Nguyen Linh\Desktop\QLGV_nhom9\QLGV_nhom9\QLGV_nhom9\obj\Debug\QLGV_nhom9.exe
 C:\Users\Nguyen Linh\Desktop\QLGV_nhom9\QLGV_nhom9\QLGV_nhom9\obj\Debug\QLGV_nhom9.pdb
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\bin\Debug\QLGV_nhom9.exe.config
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.exe
+C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.pdb
