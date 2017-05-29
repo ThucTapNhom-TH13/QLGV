@@ -20,7 +20,10 @@ namespace QLGV_nhom9
 
         public ThôngTinKhoa(string makhoa,string tenkhoa)
         {
-           
+            InitializeComponent();
+            txtMaKhoa.Text = makhoa;
+            txtTenKhoa.Text = tenkhoa;
+            txtMaKhoa.Enabled = false;//ko cho phep sua
         }
         public bool kiem_tra()
         {
@@ -63,7 +66,24 @@ namespace QLGV_nhom9
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-           
+            if (!kiem_tra()) return;
+            // khoi tao danh sach parameter
+            List<SqlParameter> listParams = new List<SqlParameter>();
+            listParams.Add(new SqlParameter("makhoa", txtMaKhoa.Text.Trim()));
+            listParams.Add(new SqlParameter("tenkhoa", txtTenKhoa.Text.Trim()));
+
+            if (txtMaKhoa.Enabled)//Thêm mới
+            {
+                a.GetDatastoreprocude
+                    ("themkhoa", listParams);
+            }
+            else //Sửa
+            {
+
+                a.GetDatastoreprocude
+                    ("suakhoa", listParams);
+            }
+            this.Close();
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
