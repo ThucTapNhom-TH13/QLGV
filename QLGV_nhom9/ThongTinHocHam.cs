@@ -20,7 +20,12 @@ namespace QLGV_nhom9
 
         public ThongTinHocHam(string mahocham,string tenhocham,int stt,string viettat)
         {
-         
+            InitializeComponent();
+            txtHocHam.Text = mahocham;
+            txtTenHocHam.Text = tenhocham;
+            txtSTT.Text = stt.ToString();
+            txtVietTat.Text = viettat;
+            txtHocHam.Enabled = false;
         }
         //kiem tra thong tin nhap
         public bool kiem_tra()
@@ -61,7 +66,24 @@ namespace QLGV_nhom9
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-           
+            if (!kiem_tra()) return;
+            //Khởi tạo danh sách parameter
+            List<SqlParameter> listParams = new List<SqlParameter>();
+            listParams.Add(new SqlParameter("mahocham", txtHocHam.Text.Trim()));
+            listParams.Add(new SqlParameter("tenhocham", txtTenHocHam.Text.Trim()));
+            listParams.Add(new SqlParameter("viettat", txtVietTat.Text.Trim()));
+            //listParams.Add(new SqlParameter("STT", int.Parse(txtSTT.Text.Trim())));
+            if (txtHocHam.Enabled)//Thêm mới
+            {
+                a.GetDatastoreprocude
+                    ("themhocham", listParams);
+            }
+            else //Sửa
+            {
+                a.GetDatastoreprocude
+                    ("suahocham", listParams);
+            }
+            this.Close();
         }
 
         private void ThongTinHocHam_Load(object sender, EventArgs e)
