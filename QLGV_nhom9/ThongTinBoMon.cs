@@ -19,7 +19,11 @@ namespace QLGV_nhom9
         }
         public ThongTinBoMon(string mabomon, string tenbomon, string tenkhoa)
         {
-          
+            InitializeComponent();
+            txtMaBoMon.Text = mabomon;
+            txtTenBoMon.Text = tenbomon;
+            cmbKhoa.Text = tenkhoa;
+            txtMaBoMon.Enabled = false;
         }
         //kiểm tra thông tin khi nhập
         public bool kiem_tra()
@@ -61,12 +65,29 @@ namespace QLGV_nhom9
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-          
+            if (!kiem_tra()) return;
+            // khoi tao danh sach parameter
+            List<SqlParameter> listParams = new List<SqlParameter>();
+            listParams.Add(new SqlParameter("mabomon", txtMaBoMon.Text.Trim()));
+            listParams.Add(new SqlParameter("tenbomon", txtTenBoMon.Text.Trim()));
+            listParams.Add(new SqlParameter("makhoa", cmbKhoa.SelectedValue.ToString().Trim()));
+            if (txtMaBoMon.Enabled)//Thêm mới
+            {
+                a.GetDatastoreprocude("thembomon", listParams);
+            }
+            else //Sửa
+            {
+
+                a.GetDatastoreprocude("suabomon", listParams);
+            }
+            this.Close();
         }
 
         private void ThongTinBoMon_Load(object sender, EventArgs e)
         {
-           
+            cmbKhoa.DisplayMember = "TenKhoa";
+            cmbKhoa.ValueMember = "MaKhoa";
+            cmbKhoa.DataSource = a.GetData("select *from Khoa");
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
