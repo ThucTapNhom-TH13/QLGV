@@ -60,7 +60,24 @@ namespace QLGV_nhom9
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-           
+            if (!kiem_tra()) return;
+            //Khởi tạo danh sách parameter
+            List<SqlParameter> listParams = new List<SqlParameter>();
+            listParams.Add(new SqlParameter("mahocvi", txtHocVi.Text.Trim()));
+            listParams.Add(new SqlParameter("tenhocvi", txtTenHocVi.Text.Trim()));
+            listParams.Add(new SqlParameter("viettat", txtVietTat.Text.Trim()));
+            //listParams.Add(new SqlParameter("STT", int.Parse(txtSTT.Text.Trim())));
+            if (txtHocVi.Enabled)//Thêm mới
+            {
+                a.GetDatastoreprocude
+                    ("themhocvi", listParams);
+            }
+            else //Sửa
+            {
+                a.GetDatastoreprocude
+                    ("suahocvi", listParams);
+            }
+            this.Close();
         }
 
         private void ThongTinHocVi_Load(object sender, EventArgs e)
