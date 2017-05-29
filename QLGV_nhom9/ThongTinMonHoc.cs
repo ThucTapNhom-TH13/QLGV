@@ -19,11 +19,18 @@ namespace QLGV_nhom9
         }
         public ThongTinMonHoc(string mamonhoc,string tenmonhoc,int sotinchi,string mabomon)
         {
-           
+            InitializeComponent();
+            txtMaMonHoc.Text = mamonhoc;
+            txtTenMonHoc.Text = tenmonhoc;
+            cmbBoMon.Text = mabomon;
+            txtSoTinChi.Text = sotinchi.ToString();
+            txtMaMonHoc.Enabled = false;
         }
         private void ThongTinMonHoc_Load(object sender, EventArgs e)
         {
-           
+            cmbBoMon.DisplayMember = "TenBoMon";
+            cmbBoMon.ValueMember = "MaBoMon";
+            cmbBoMon.DataSource = a.GetData("select *from BoMon");
         }
         public bool kiem_tra()
         {
@@ -72,7 +79,23 @@ namespace QLGV_nhom9
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-           
+            if (!kiem_tra()) return;
+            //Khởi tạo danh sách parameter
+            List<SqlParameter> listParams = new List<SqlParameter>();
+            listParams.Add(new SqlParameter("mamonhoc", txtMaMonHoc.Text.Trim()));
+            listParams.Add(new SqlParameter("tenmonhoc", txtTenMonHoc.Text.Trim()));
+            listParams.Add(new SqlParameter("stc", int.Parse(txtSoTinChi.Text.Trim())));
+            listParams.Add(new SqlParameter("mabomon", cmbBoMon.SelectedValue.ToString().Trim()));
+
+            if (txtMaMonHoc.Enabled)//Thêm mới
+            {
+                a.GetDatastoreprocude("themmonhoc", listParams);
+            }
+            else //Sửa
+            {
+                a.GetDatastoreprocude("suamonhoc", listParams);
+            }
+            this.Close();
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
