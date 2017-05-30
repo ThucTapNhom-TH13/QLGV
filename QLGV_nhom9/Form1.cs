@@ -19,7 +19,7 @@ namespace QLGV_nhom9
             InitializeComponent();
         }
 
-        public  void ShowChild(Form parent, Form child)
+        public void ShowChild(Form parent, Form child)
         {
             if (parent == null) throw new ArgumentNullException("parent form is null");
 
@@ -52,7 +52,7 @@ namespace QLGV_nhom9
             child.Show();
             child.Activate();
         }
-        
+
 
         private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -69,7 +69,7 @@ namespace QLGV_nhom9
             this.ShowChild(this, new DanhSachHocVi());
         }
 
-        
+
         private void chứcVụToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.ShowChild(this, new DanhSachChucVu());
@@ -145,7 +145,7 @@ namespace QLGV_nhom9
             //this.ShowChild(this, new InAn());
             this.ShowChild(this, new FormLyLichGiaoVien());
         }
-       
-        
+
+
     }
 }
