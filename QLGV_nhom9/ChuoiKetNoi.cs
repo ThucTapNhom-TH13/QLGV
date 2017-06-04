@@ -10,20 +10,8 @@ namespace QLGV_nhom9
     class ChuoiKetNoi
     {
         SqlConnection con = new SqlConnection("Data Source=LINH\\SQLEXPRESS;Initial Catalog=QLGV;Integrated Security=True");
-        
-        public DataTable GetData(string sql)
-        {
-            SqlCommand cmd = new SqlCommand(sql, con);
-            SqlDataAdapter da = new SqlDataAdapter();
-            da.SelectCommand = cmd;
-            cmd.CommandType = CommandType.Text;
-            DataTable dt = new DataTable();
-            con.Open();
-            da.Fill(dt);
-            con.Close();
-            return dt;
 
-        }
+        
         public DataTable GetData(string sql, List<SqlParameter> danhsach)
         {
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -32,6 +20,19 @@ namespace QLGV_nhom9
             cmd.CommandType = CommandType.Text;
             foreach (SqlParameter p in danhsach)
                 cmd.Parameters.Add(p);
+            DataTable dt = new DataTable();
+            con.Open();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+
+        }
+        public DataTable GetData(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            cmd.CommandType = CommandType.Text;
             DataTable dt = new DataTable();
             con.Open();
             da.Fill(dt);

@@ -37,17 +37,7 @@ namespace QLGV_nhom9
             Load_BoMon();
         }
 
-        private void btnSuaBM_Click(object sender, EventArgs e)
-        {
-            string mabomon, tenbomon, makhoa;
-            mabomon = dgvBoMon.CurrentRow.Cells[0].Value.ToString();
-            var ChiTietBM = LoadChiTietBoMon(mabomon);
-            tenbomon = ChiTietBM["TenBoMon"].ToString();
-            makhoa = ChiTietBM["MaKhoa"].ToString();
-            ThongTinBoMon x = new ThongTinBoMon(mabomon, tenbomon, makhoa);
-            x.ShowDialog();
-            Load_BoMon();
-        }
+        
 
         private void btnXoaBM_Click(object sender, EventArgs e)
         {
@@ -61,6 +51,17 @@ namespace QLGV_nhom9
             Load_BoMon();
         }
 
+        private void btnSuaBM_Click(object sender, EventArgs e)
+        {
+            string mabomon, tenbomon, makhoa;
+            mabomon = dgvBoMon.CurrentRow.Cells[0].Value.ToString();
+            var ChiTietBM = LoadChiTietBoMon(mabomon);
+            tenbomon = ChiTietBM["TenBoMon"].ToString();
+            makhoa = ChiTietBM["MaKhoa"].ToString();
+            ThongTinBoMon x = new ThongTinBoMon(mabomon, tenbomon, makhoa);
+            x.ShowDialog();
+            Load_BoMon();
+        }
         private void DanhSachBoMon_Load(object sender, EventArgs e)
         {
             Load_BoMon();
