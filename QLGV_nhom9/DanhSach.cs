@@ -27,7 +27,7 @@ namespace QLGV_nhom9
         }
         public void Load_GiaoVien()
         {
-            DataTable dt = a.GetData("Select *from Giaovien");
+            DataTable dt = a.GetData("Select * from Giaovien");
             dgvGiaoVien.DataSource = dt;
         }
 

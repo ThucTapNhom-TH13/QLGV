@@ -19,7 +19,7 @@ namespace QLGV_nhom9
         }
         public void Load_HocVi()
         {
-            DataTable dt = a.GetData("select *from HocVi");
+            DataTable dt = a.GetData("select * from HocVi");
             dgvHocVi.DataSource = dt;
         }
 

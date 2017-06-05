@@ -19,7 +19,7 @@ namespace QLGV_nhom9
         }
         public void Load_BoMon()
         {
-            DataTable dt = a.GetData("select*from BoMon");
+            DataTable dt = a.GetData("select * from BoMon");
             dgvBoMon.DataSource = dt;
         }
         public DataRow LoadChiTietBoMon(string mabomon)

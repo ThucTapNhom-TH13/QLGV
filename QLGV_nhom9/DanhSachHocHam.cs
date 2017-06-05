@@ -19,7 +19,7 @@ namespace QLGV_nhom9
         }
         public void Load_HocHam()
         {
-            DataTable dt = a.GetData("select *from HocHam");
+            DataTable dt = a.GetData("select * from HocHam");
             dgvHocHam.DataSource = dt;
         }
         private void btnThem_Click(object sender, EventArgs e)

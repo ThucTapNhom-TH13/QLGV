@@ -19,7 +19,7 @@ namespace QLGV_nhom9
         }
         public void Load_MonHoc()
         {
-            DataTable dt = a.GetData("select*from MonHoc");
+            DataTable dt = a.GetData("select * from MonHoc");
             dgvMonHoc.DataSource = dt;
         }
         private void btnThemMH_Click(object sender, EventArgs e)

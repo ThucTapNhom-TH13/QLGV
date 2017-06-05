@@ -324,3 +324,6 @@ C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.Thong
 C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.ThôngTinKhoa.resources
 C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.TimKiem.resources
 C:\Users\Nguyen Linh\Documents\GitHub\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.csproj.GenerateResource.Cache
+D:\Github\QLGV\QLGV_nhom9\bin\Debug\QLGV_nhom9.exe.config
+D:\Github\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.exe
+D:\Github\QLGV\QLGV_nhom9\obj\Debug\QLGV_nhom9.pdb
